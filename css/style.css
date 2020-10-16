@@ -1,0 +1,79 @@
+* {margin: 0px;}
+
+#container {
+    display: grid;
+    width: 40vw;
+    height: 100vh;
+    grid-template-areas: 
+    "he he he"
+    "ig ig ig"
+    "ig ig ig"
+    "ig ig ig"
+    "ig ig ig"
+    "fo fo fo"
+    
+    ;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 10px;
+    background: turquoise;
+}
+
+
+#header {
+    grid-area: he;
+    background: lightblue;
+}
+
+
+#innergrid {
+    display: grid;
+    grid-area: ig;
+    background: turquoise;
+    grid-gap: 15px;
+
+    grid-template-areas: 
+    "a1 a2 a3"
+    "a4 a4 as"
+    "a4 a4 as"
+    "a5 a5 as"
+    
+    ;
+}
+
+#article1 {
+    grid-area: a1;
+    background: lightcoral;
+}
+
+#article2 {
+    grid-area: a2;
+    background: lightcoral;
+}
+
+#article3 {
+    grid-area: a3;
+    background: lightcoral;
+}
+
+#article4 {
+    grid-area: a4;
+    background: lightcoral;
+}
+
+#article5 {
+    grid-area: a5;
+    background: lightcoral;
+}
+
+#aside {
+    grid-area: as;
+    background: lightyellow;
+}
+
+#footer {
+    grid-area: fo;
+    background: lightsteelblue;
+    padding: 10px;
+}
